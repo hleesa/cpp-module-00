@@ -89,7 +89,7 @@ bool PhoneBook::isRightIdx(std::string input) {
 	std::stringstream ss(input);
 	size_t inputIdx;
 	ss >> inputIdx;
-	if (0 <= inputIdx && inputIdx < min(idx, size)) {
+	if (inputIdx < min(idx, size)) {
 		return true;
 	}
 	return false;
